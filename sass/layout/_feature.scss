@@ -1,0 +1,30 @@
+.feature-list {
+  display: flex;
+  line-height: 1.71;
+}
+.feature-list__title {
+  @extend %title;
+  margin-bottom: 10px;
+  @include font($fw: 700, $lh: 1.14);
+}
+.feature-list__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.feature-list__text {
+  color: var(--text-prime-color);
+}
+.feature-list__box {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: var(--bg-second-color);
+}

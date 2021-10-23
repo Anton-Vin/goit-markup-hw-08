@@ -1,0 +1,38 @@
+.form-modal__checkbox {
+  margin-bottom: 30px;
+}
+.form-modal__check-lable .form-modal__agreement {
+  text-decoration-line: underline;
+  color: var(--accent-color);
+  padding-left: 4px;
+}
+
+.form-modal__check-lable {
+  @include dispflex();
+  justify-content: center;
+  line-height: 1.7;
+  cursor: pointer;
+}
+.form-modal__icon-check {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--text-title-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.form-modal__checkbox_cheked:checked
+  + .form-modal__check-lable
+  > .form-modal__icon-check {
+  border: none;
+  fill: var(--accent-color);
+}
+.modal__btn {
+  @extend %button;
+  display: block;
+  margin: auto;
+}

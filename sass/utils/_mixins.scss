@@ -1,0 +1,11 @@
+@mixin font($fz: 14px, $fw: 400, $lh: 1.71, $ls: 0.03em) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin dispflex($df: flex, $ai: center) {
+  display: $df;
+  align-items: $ai;
+}

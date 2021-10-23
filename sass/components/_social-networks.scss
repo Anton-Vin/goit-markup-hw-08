@@ -1,0 +1,31 @@
+.socials {
+  display: flex;
+  justify-content: center;
+}
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__link {
+  @include dispflex();
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  fill: var(--social-netw-color);
+  background-color: var(--bg-prime-color);
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--text-white-color);
+  }
+}
+
+.socials__link_white_fill {
+  fill: var(--text-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}

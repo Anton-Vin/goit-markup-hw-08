@@ -1,0 +1,22 @@
+%button {
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+  @include font($fz: 16px, $fw: 700, $lh: 1.88, $ls: 0.06em);
+
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+%title {
+  text-transform: uppercase;
+  color: var(--text-title-color);
+}
