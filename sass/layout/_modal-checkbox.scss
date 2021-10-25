@@ -1,4 +1,5 @@
 .form-modal__checkbox {
+  position: relative;
   margin-bottom: 30px;
 }
 .form-modal__check-lable .form-modal__agreement {
@@ -8,20 +9,28 @@
 }
 
 .form-modal__check-lable {
-  @include dispflex();
-  justify-content: center;
-  line-height: 1.7;
+  // @include dispflex();
+  // justify-content: center;
+  @include font($fz: 12px, $fw: 400, $lh: 1.16, $ls: 0.03em);
   cursor: pointer;
+  padding-left: 22px;
+  @media screen and (min-width: 1200px) {
+    @include font($fz: 14px, $fw: 400, $lh: 1.71, $ls: 0.03em);
+  }
 }
 .form-modal__icon-check {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  transform: translateY(-50%);
   width: 16px;
   height: 15px;
   border: 2px solid var(--text-title-color);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   fill: transparent;
 }
 

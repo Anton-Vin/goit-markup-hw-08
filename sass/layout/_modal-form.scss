@@ -1,10 +1,13 @@
 .modal__title {
-  // @include font($fz: 20px, $fw: 700, $lh: 1.15);
   @include font(20px, 700, 1.5);
   text-align: center;
   margin-bottom: 12px;
 
   color: var(--text-title-color);
+
+  @media screen and (min-width: 1200px) {
+    @include font(20px, 700, 1.15);
+  }
 }
 .form-modal__field {
   margin-bottom: 10px;
@@ -40,9 +43,14 @@
   transition: border-color 250ms var(--timing-function);
   &::placeholder {
     font-family: inherit;
-    @include font($lh: 1.17, $ls: 0.01em);
+    @include font($fz: 12px, $lh: 1.14, $ls: 0.01em);
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 1200px) {
+      @include font($lh: 1.17, $ls: 0.01em);
+    }
   }
+
   .form-modal__comment &:focus {
     border-color: var(--accent-color);
     outline: none;
