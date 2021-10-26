@@ -1,11 +1,19 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   .section__title {
     @extend %title;
-    margin-bottom: 50px;
-    @include font($fz: 36px, $fw: 700, $lh: 1.17);
+    margin-bottom: 30px;
+    @include font($fz: 28px, $fw: 700, $lh: 1.18);
     text-align: center;
     text-transform: none;
+    @media screen and (min-width: 1200px) {
+      @include font($fz: 36px, $fw: 700, $lh: 1.17);
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }

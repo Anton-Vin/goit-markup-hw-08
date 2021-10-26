@@ -1,13 +1,18 @@
 .logo {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
-  @include font($fz: 26px, $fw: 700, $lh: 1.17);
+  @include font($fz: 24px, $fw: 700, $lh: 1.17);
   text-decoration: none;
   .logo_black {
-    margin-right: 93px;
+    margin-left: 0;
+    margin-right: 0;
     color: #000000;
   }
   .logo_white {
     color: var(--text-white-color);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font($fz: 26px, $fw: 700, $lh: 1.19);
+    margin-right: 93px;
   }
 }

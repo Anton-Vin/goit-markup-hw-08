@@ -5,41 +5,37 @@
 .form-modal__check-lable .form-modal__agreement {
   text-decoration-line: underline;
   color: var(--accent-color);
-  padding-left: 4px;
 }
 
 .form-modal__check-lable {
-  // @include dispflex();
-  // justify-content: center;
   @include font($fz: 12px, $fw: 400, $lh: 1.16, $ls: 0.03em);
   cursor: pointer;
   padding-left: 22px;
   @media screen and (min-width: 1200px) {
     @include font($fz: 14px, $fw: 400, $lh: 1.71, $ls: 0.03em);
+    padding-left: 36px;
   }
 }
 .form-modal__icon-check {
   position: absolute;
-  top: 20%;
-  left: 0%;
+  top: 25%;
   transform: translateY(-50%);
-  width: 16px;
-  height: 15px;
+  left: 0;
   border: 2px solid var(--text-title-color);
-  border-radius: 2px;
-  margin-right: 8px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  fill: transparent;
+  border-radius: 3px;
+  .form-modal__checkbox_cheked:checked + & {
+    border: none;
+    background-color: var(--accent-color);
+  }
+  @media screen and (min-width: 440px) {
+    top: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 13px;
+  }
 }
 
-.form-modal__checkbox_cheked:checked
-  + .form-modal__check-lable
-  > .form-modal__icon-check {
-  border: none;
-  fill: var(--accent-color);
-}
 .modal__btn {
   @extend %button;
   display: block;

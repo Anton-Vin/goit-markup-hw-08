@@ -1,7 +1,8 @@
 .contacts {
-  @include dispflex();
-  flex-grow: 1;
-  justify-content: flex-end;
+  display: none;
+  // @include dispflex();
+  // flex-grow: 1;
+  // justify-content: flex-end;
   .contacts__icon {
     display: inline-block;
     margin-right: 10px;
@@ -15,15 +16,15 @@
   }
 }
 .contacts__link {
-  @include dispflex($df: inline-flex);
+  // @include dispflex($df: inline-flex);
 
   list-style: none;
   @include font($fw: 500, $lh: 1.17, $ls: 0.02em);
   color: var(--text-prime-color);
   text-decoration: none;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   transition: color 250ms var(--timing-function);
 

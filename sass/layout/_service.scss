@@ -1,10 +1,14 @@
 .section--no-padding-top {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   padding-top: 0;
   padding-bottom: 94px;
 }
 
 .service-list {
   display: flex;
+  justify-content: center;
 }
 .service-list__item:not(:last-child) {
   margin-right: 30px;
