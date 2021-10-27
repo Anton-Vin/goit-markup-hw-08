@@ -303,9 +303,10 @@ body {
   color: var(--accent-color);
 }
 
-.menu-flex {
-  display: flex;
-  flex-direction: column;
+.wrapper {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 48px;
 }
 
 .menu-contacts .menu-contacts__link--blue {
@@ -315,8 +316,49 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--accent-color);
-  margin-top: auto;
-  margin-bottom: 34px;
+}
+
+.menu-contacts__link {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+  text-decoration: none;
+  color: var(--text-prime-color);
+  transition: color 250ms var(--timing-function);
+}
+
+.menu-contacts__link:hover, .menu-contacts__link:focus {
+  color: var(--accent-color);
+}
+
+.menu-contacts__item--mb {
+  margin-bottom: 32px;
+}
+
+.menu-networks {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.menu-networks .menu-networks__link {
+  text-decoration: none;
+  color: var(--text-prime-color);
+  transition: color 250ms var(--timing-function);
+}
+
+.menu-networks .menu-networks__link:hover, .menu-networks .menu-networks__link:focus {
+  color: var(--accent-color);
+}
+
+.menu-networks__item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .contacts {
