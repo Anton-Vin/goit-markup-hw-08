@@ -73,26 +73,38 @@
       </button>
       <div class="menu-container js-menu-container"
            id="mobile-menu">
-        <button class="menu-toggle js-close-menu"><svg width="19"
+        <button class="menu-toggle js-close-menu"><svg class="mobile-menu--icon-close"
+               width="19"
                height="19">
             <use href="./images/symbol-defs (2).svg#icon-close_24px"></use>
           </svg>
         </button>
-        <ul>
-          <li>Студия</li>
-          <li>Портфолио</li>
-          <li>Контакты</li>
-        </ul>
-        <ul>
-          <li>+38 096 111 11 11</li>
-          <li>info@devstudio.com</li>
-        </ul>
-        <ul>
-          <li>Instagram</li>
-          <li>Twitter</li>
-          <li>Facebook</li>
-          <li>Linkedin</li>
-        </ul>
+        <div class="menu-flex">
+          <ul class="menu-mob">
+            <li class="menu-mob__item"><a href="./index.html"
+                 class="menu-mob__link menu-mob__link_current">Студия</a></li>
+            <li class="menu-mob__item"><a href="./portfolio.html"
+                 class="menu-mob__link">Портфолио</a></li>
+            <li class="menu-mob__item"><a href="#contacts"
+                 class="menu-mob__link">Контакты</a></li>
+          </ul>
+          <ul class="menu-contacts">
+            <li class="menu-contacts__item"><a href="tel:+380961111111"
+                 class="menu-contacts__link--blue">+38 096 111 11 11</a></li>
+            <li class="menu-contacts__item"><a href="mailto:info@devstudio.com"
+                 class="menu-contacts__link">info@devstudio.com</a></li>
+          </ul>
+          <ul class="menu-networks">
+            <li class="menu-networks__item"><a href="#"
+                 class="menu-networks__link">Instagram</a></li>
+            <li class="menu-networks__item"><a href="#"
+                 class="menu-networks__link">Twitter</a></li>
+            <li class="menu-networks__item"><a href="#"
+                 class="menu-networks__link">Facebook</a></li>
+            <li class="menu-networks__item"><a href="#"
+                 class="menu-networks__link">Linkedin</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -114,44 +126,44 @@
     <section class="section">
       <div class="container">
         <h2 class="visually-hidden">Особенности</h2>
-        <ul class="feature-list">
-          <li class="feature-list__item">
-            <div class="feature-list__box"><svg width="70"
+        <ul class="featuru-mob">
+          <li class="featuru-mob__item">
+            <div class="featuru-mob__box"><svg width="70"
                    height="70">
                 <use href="./images/symbol-defs (2).svg#icon-Group"></use>
               </svg></div>
-            <h3 class="feature-list__title">Внимание к деталям</h3>
-            <p class="feature-list__text">Идейные соображения, а также начало повседневной работы по формированию
+            <h3 class="featuru-mob__title">Внимание к деталям</h3>
+            <p class="featuru-mob__text">Идейные соображения, а также начало повседневной работы по формированию
               позиции.</p>
           </li>
-          <li class="feature-list__item">
-            <div class="feature-list__box"><svg width="70"
+          <li class="featuru-mob__item">
+            <div class="featuru-mob__box"><svg width="70"
                    height="70">
                 <use href="./images/symbol-defs (2).svg#icon-clock-1"></use>
               </svg></div>
-            <h3 class="feature-list__title">Пунктуальность</h3>
-            <p class="feature-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
+            <h3 class="featuru-mob__title">Пунктуальность</h3>
+            <p class="featuru-mob__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
               собой.
             </p>
           </li>
-          <li class="feature-list__item">
-            <div class="feature-list__box"><svg width="70"
+          <li class="featuru-mob__item">
+            <div class="featuru-mob__box"><svg width="70"
                    height="70">
                 <use href="./images/symbol-defs (2).svg#icon-diagram-1"></use>
               </svg></div>
-            <h3 class="feature-list__title">Планирование</h3>
-            <p class="feature-list__text">Равным образом консультация с широким активом в значительной степени
+            <h3 class="featuru-mob__title">Планирование</h3>
+            <p class="featuru-mob__text">Равным образом консультация с широким активом в значительной степени
               обуславливает.
             </p>
           </li>
-          <li class="feature-list__item">
-            <div class="feature-list__box"><svg class="antena-icon"
+          <li class="featuru-mob__item">
+            <div class="featuru-mob__box"><svg class="antena-icon"
                    width="70"
                    height="70">
                 <use href="./images/symbol-defs (2).svg#icon-astronaut-1"></use>
               </svg></div>
-            <h3 class="feature-list__title">Современные технологии</h3>
-            <p class="feature-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+            <h3 class="featuru-mob__title">Современные технологии</h3>
+            <p class="featuru-mob__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </p>
           </li>
         </ul>
@@ -164,21 +176,21 @@
     <section class="section section--no-padding-top">
       <div class="container">
         <h2 class="section__title">Чем мы занимаемся</h2>
-        <ul class="service-list">
-          <li class="service-list__item"><img src="images/box1_.jpg"
+        <ul class="servicu-mob">
+          <li class="servicu-mob__item"><img src="images/box1_.jpg"
                  alt="верстка сайтов"
                  width="370">
-            <p class="service-list__overlay">Десктопные приложения</p>
+            <p class="servicu-mob__overlay">Десктопные приложения</p>
           </li>
-          <li class="service-list__item"><img src="images/box2_.jpg"
+          <li class="servicu-mob__item"><img src="images/box2_.jpg"
                  alt="мобильные приложения"
                  width="370">
-            <p class="service-list__overlay">Мобильные приложения</p>
+            <p class="servicu-mob__overlay">Мобильные приложения</p>
           </li>
-          <li class="service-list__item"><img src="images/box3_.jpg"
+          <li class="servicu-mob__item"><img src="images/box3_.jpg"
                  alt="дизайнерские решения"
                  width="370">
-            <p class="service-list__overlay">Дизайнерские решения</p>
+            <p class="servicu-mob__overlay">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
@@ -189,15 +201,15 @@
     <section class="section section--bg-grey">
       <div class="container">
         <h2 class="section__title">Наша команда</h2>
-        <ul class="team-list">
-          <li class="team-list__item">
-            <div class="team-list__shadow">
+        <ul class="teau-mob">
+          <li class="teau-mob__item">
+            <div class="teau-mob__shadow">
               <img src="images/img_1_Igor_Dem.jpg"
                    alt="фото Игоря Демьяненко"
                    width="270" />
-              <div class="team-list__box">
-                <h3 class="team-list__title">Игорь Демьяненко</h3>
-                <p class="team-list__text"
+              <div class="teau-mob__box">
+                <h3 class="teau-mob__title">Игорь Демьяненко</h3>
+                <p class="teau-mob__text"
                    lang="en">Product Designer</p>
 
                 <ul class="socials">
@@ -225,14 +237,14 @@
               </div>
             </div>
           </li>
-          <li class="team-list__item">
-            <div class="team-list__shadow">
+          <li class="teau-mob__item">
+            <div class="teau-mob__shadow">
               <img src="images/img_2_Olga_Rep.jpg"
                    alt="фото Ольга Репина"
                    width="270" />
-              <div class="team-list__box">
-                <h3 class="team-list__title">Ольга Репина</h3>
-                <p class="team-list__text"
+              <div class="teau-mob__box">
+                <h3 class="teau-mob__title">Ольга Репина</h3>
+                <p class="teau-mob__text"
                    lang="en">Frontend Developer</p>
 
                 <ul class="socials">
@@ -260,14 +272,14 @@
               </div>
             </div>
           </li>
-          <li class="team-list__item">
-            <div class="team-list__shadow">
+          <li class="teau-mob__item">
+            <div class="teau-mob__shadow">
               <img src="images/img_3_Nick_Tar.jpg"
                    alt="фото Николай Тарасов"
                    width="270" />
-              <div class="team-list__box">
-                <h3 class="team-list__title">Николай Тарасов</h3>
-                <p class="team-list__text"
+              <div class="teau-mob__box">
+                <h3 class="teau-mob__title">Николай Тарасов</h3>
+                <p class="teau-mob__text"
                    lang="en">Marketing</p>
 
                 <ul class="socials">
@@ -295,14 +307,14 @@
               </div>
             </div>
           </li>
-          <li class="team-list__item">
-            <div class="team-list__shadow">
+          <li class="teau-mob__item">
+            <div class="teau-mob__shadow">
               <img src="images/img_4_Mich_Erm.jpg"
                    alt="фото Михаил Ермаков"
                    width="270" />
-              <div class="team-list__box">
-                <h3 class="team-list__title">Михаил Ермаков</h3>
-                <p class="team-list__text"
+              <div class="teau-mob__box">
+                <h3 class="teau-mob__title">Михаил Ермаков</h3>
+                <p class="teau-mob__text"
                    lang="en">UI Designer</p>
 
                 <ul class="socials">
@@ -339,23 +351,23 @@
     <!-- <section class="section">
       <div class="container">
         <h2 class="section__title">Постоянные клиенты</h2>
-        <ul class="clients-list">
-          <li class="clients-list__item"><a class="clients-list__links" href=""><svg width="106" height="60">
+        <ul class="clientu-mob">
+          <li class="clientu-mob__item"><a class="clientu-mob__links" href=""><svg width="106" height="60">
                   <use href="./images/symbol-defs (2).svg#icon-Logo1"></use>
                 </svg></a></li>
-          <li class="clients-list__item"><a class="clients-list__links" href=""><svg width="106" height="60">
+          <li class="clientu-mob__item"><a class="clientu-mob__links" href=""><svg width="106" height="60">
                   <use href="./images/symbol-defs (2).svg#icon-Logo2"></use>
                 </svg></a></li>
-          <li class="clients-list__item"><a class="clients-list__links" href=""><svg width="106" height="60">
+          <li class="clientu-mob__item"><a class="clientu-mob__links" href=""><svg width="106" height="60">
                   <use href="./images/symbol-defs (2).svg#icon-Logo3"></use>
                 </svg></a></li>
-          <li class="clients-list__item"><a class="clients-list__links" href=""><svg width="106" height="60">
+          <li class="clientu-mob__item"><a class="clientu-mob__links" href=""><svg width="106" height="60">
                   <use href="./images/symbol-defs (2).svg#icon-Logo4"></use>
                 </svg></a></li>
-          <li class="clients-list__item"><a class="clients-list__links" href=""><svg width="106" height="60">
+          <li class="clientu-mob__item"><a class="clientu-mob__links" href=""><svg width="106" height="60">
                   <use href="./images/symbol-defs (2).svg#icon-Logo5"></use>
                 </svg></a></li>
-          <li class="clients-list__item"><a class="clients-list__links" href=""><svg width="106" height="60">
+          <li class="clientu-mob__item"><a class="clientu-mob__links" href=""><svg width="106" height="60">
                   <use href="./images/symbol-defs (2).svg#icon-Logo6"></use>
                 </svg></a></li>
         </ul>
