@@ -1,64 +1,3 @@
-.header {
-  position: relative;
-  @include dispflex();
-  justify-content: space-between;
-
-  border-bottom: 1px solid #ececec;
-  padding: 10px 15px;
-  .header__flex {
-    // @include dispflex();
-  }
-}
-.site-nav {
-  display: none;
-  @include font($fz: 14px, $fw: 500, $lh: 1.17, $ls: 0.02em);
-  // @include dispflex();
-  .site-nav__link {
-    position: relative;
-
-    display: block;
-    color: var(--text-title-color);
-    text-decoration: none;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
-
-    transition: color 250ms var(--timing-function);
-    &:hover,
-    &:focus,
-    &:active,
-    &.site-nav__link_current {
-      color: var(--accent-color);
-    }
-  }
-}
-.navigation {
-  // @include dispflex();
-}
-
-.site-nav__item:not(:last-child) {
-  // margin-right: 50px;
-}
-
-.site-nav__link::after {
-  content: '';
-
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-
-  display: block;
-  width: 0%;
-  height: 4px;
-  background: var(--accent-color);
-  border-radius: 2px;
-
-  opacity: 0;
-}
-.site-nav__link.site-nav__link_current::after {
-  opacity: 1;
-  width: 100%;
-}
-
 // _____________MOBILE_MENU______
 .menu-container {
   position: fixed;
@@ -130,6 +69,9 @@
     text-decoration: none;
     color: var(--accent-color);
   }
+  .menu-contacts__mail {
+    margin-bottom: 65px;
+  }
 }
 .menu-contacts__link {
   @include font(24px, 500, 1.17, 0.02em);
@@ -142,7 +84,7 @@
     color: var(--accent-color);
   }
 }
-.menu-contacts__item--mb {
+.menu-contacts__tel {
   margin-bottom: 32px;
 }
 .menu-networks {

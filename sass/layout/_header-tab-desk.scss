@@ -1,0 +1,107 @@
+.header {
+  position: relative;
+  @include dispflex();
+  justify-content: space-between;
+
+  border-bottom: 1px solid #ececec;
+  padding: 10px 15px;
+}
+.header__wrap {
+  @include dispflex();
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.site-nav {
+  @include dispflex();
+
+  @include font($fz: 14px, $fw: 500, $lh: 1.17, $ls: 0.02em);
+
+  .site-nav__link {
+    position: relative;
+
+    display: block;
+    color: var(--text-title-color);
+    text-decoration: none;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+
+    transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus,
+    &:active,
+    &.site-nav__link_current {
+      color: var(--accent-color);
+    }
+  }
+}
+.navigation {
+  // @include dispflex();
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav__link::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  display: block;
+  width: 0%;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+
+  opacity: 0;
+}
+.site-nav__link.site-nav__link_current::after {
+  opacity: 1;
+  width: 100%;
+}
+
+// ______TEL____MAIL______
+.contacts {
+  @include dispflex();
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
+  .contacts__icon {
+    display: inline-block;
+    margin-right: 10px;
+    fill: var(--text-prime-color);
+
+    transition: fill 250ms var(--timing-function);
+  }
+
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.contacts__link {
+  // @include dispflex($df: inline-flex);
+
+  list-style: none;
+  @include font(12, 500, 1.17, 0.02em);
+  color: var(--text-prime-color);
+  text-decoration: none;
+
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+
+  transition: color 250ms var(--timing-function);
+
+  &:hover .contacts__icon,
+  &:focus .contacts__icon,
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}

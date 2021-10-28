@@ -192,53 +192,6 @@ body {
   }
 }
 
-.header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #ececec;
-  padding: 10px 15px;
-}
-
-.site-nav {
-  display: none;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-}
-
-.site-nav .site-nav__link {
-  position: relative;
-  display: block;
-  color: var(--text-title-color);
-  text-decoration: none;
-  transition: color 250ms var(--timing-function);
-}
-
-.site-nav .site-nav__link:hover, .site-nav .site-nav__link:focus, .site-nav .site-nav__link:active, .site-nav .site-nav__link.site-nav__link_current {
-  color: var(--accent-color);
-}
-
-.site-nav__link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  display: block;
-  width: 0%;
-  height: 4px;
-  background: var(--accent-color);
-  border-radius: 2px;
-  opacity: 0;
-}
-
-.site-nav__link.site-nav__link_current::after {
-  opacity: 1;
-  width: 100%;
-}
-
 .menu-container {
   position: fixed;
   width: 100vw;
@@ -318,6 +271,10 @@ body {
   color: var(--accent-color);
 }
 
+.menu-contacts .menu-contacts__mail {
+  margin-bottom: 65px;
+}
+
 .menu-contacts__link {
   font-size: 24px;
   font-weight: 500;
@@ -333,7 +290,7 @@ body {
   color: var(--accent-color);
 }
 
-.menu-contacts__item--mb {
+.menu-contacts__tel {
   margin-bottom: 32px;
 }
 
@@ -361,8 +318,75 @@ body {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+  padding: 10px 15px;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header__wrap {
+    display: none;
+  }
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .site-nav__link {
+  position: relative;
+  display: block;
+  color: var(--text-title-color);
+  text-decoration: none;
+  transition: color 250ms var(--timing-function);
+}
+
+.site-nav .site-nav__link:hover, .site-nav .site-nav__link:focus, .site-nav .site-nav__link:active, .site-nav .site-nav__link.site-nav__link_current {
+  color: var(--accent-color);
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 0%;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  opacity: 0;
+}
+
+.site-nav__link.site-nav__link_current::after {
+  opacity: 1;
+  width: 100%;
+}
+
 .contacts {
-  display: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 .contacts .contacts__icon {
@@ -378,7 +402,7 @@ body {
 
 .contacts__link {
   list-style: none;
-  font-size: 14px;
+  font-size: 12;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -401,7 +425,7 @@ body {
   flex-grow: 1;
   padding: 118px 0;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-mob1x-min.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob1x-min.jpg");
   background-color: var(--bg-hero-footer);
   background-repeat: no-repeat;
   background-position: center;
@@ -410,20 +434,20 @@ body {
 
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-mob2x-min.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob2x-min.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     min-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-tab1x-min.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tab1x-min.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-tab2x-min.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tab2x-min.jpg");
   }
 }
 
@@ -431,13 +455,13 @@ body {
   .hero {
     min-width: 1200px;
     padding: 200px 0px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-desk1x-min.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desk1x-min.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-desk2x-min.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desk2x-min.jpg");
   }
 }
 
@@ -600,7 +624,33 @@ body {
 
 .team-list__item {
   width: 100%;
-  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+}
+
+.team-list__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team-list__box {

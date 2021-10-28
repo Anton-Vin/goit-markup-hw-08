@@ -29,12 +29,11 @@
 
 <body>
   <!-------------ВЕРХНЯЯ ЛИНИЯ -------------------->
-  <header class="header">
+  <header class="header"><a href=""
+       class="logo animate__animated animate__heartBeat">Web<span class="logo_black">Studio</span></a>
 
-    <div class="header__flex">
+    <div class="header__wrap">
       <nav class="navigation">
-        <a href=""
-           class="logo animate__animated animate__heartBeat">Web<span class="logo_black">Studio</span></a>
         <ul class="site-nav">
           <li class="site-nav__item"><a href="./index.html"
                class="site-nav__link site-nav__link_current">Студия</a></li>
@@ -89,12 +88,12 @@
                class="menu-mob__link">Контакты</a></li>
         </ul>
         <div class="wrapper">
-          <ul class="menu-contacts">
-            <li class="menu-contacts__item menu-contacts__item--mb"><a href="tel:+380961111111"
-                 class="menu-contacts__link--blue">+38 096 111 11 11</a></li>
-            <li class="menu-contacts__item"><a href="mailto:info@devstudio.com"
-                 class="menu-contacts__link">info@devstudio.com</a></li>
-          </ul>
+          <div class="menu-contacts">
+            <div class="menu-contacts__tel"><a href="tel:+380961111111"
+                 class="menu-contacts__link--blue">+38 096 111 11 11</a></div>
+            <div class="menu-contacts__mail"><a href="mailto:info@devstudio.com"
+                 class="menu-contacts__link">info@devstudio.com</a></div>
+          </div>
           <ul class="menu-networks">
             <li class="menu-networks__item"><a href="#"
                  class="menu-networks__link">Instagram</a></li>
@@ -178,19 +177,40 @@
       <div class="container">
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="service-list">
-          <li class="service-list__item"><img src="images/box1_.jpg"
-                 alt="верстка сайтов"
-                 width="370">
+          <li class="service-list__item">
+            <picture class="service__image">
+              <source srcset="
+                ./images/service/img1-1x-min.jpg 1x,
+                ./images/service/img1-2x-min.jpg 2x
+              "
+                      media="(min-width:1200px)" />
+              <img src="./images/service/img1-1x-min.jpg"
+                   alt="Десктопные приложения" />
+            </picture>
             <p class="service-list__overlay">Десктопные приложения</p>
           </li>
-          <li class="service-list__item"><img src="images/box2_.jpg"
-                 alt="мобильные приложения"
-                 width="370">
+          <li class="service-list__item">
+            <picture class="service__image">
+              <source srcset="
+                ./images/service/img2-1x-min.jpg 1x,
+                ./images/service/img2-2x-min.jpg 2x
+              "
+                      media="(min-width:1200px)" />
+              <img src="./images/service/img2-1x-min.jpg"
+                   alt="Мобильные приложения" />
+            </picture>
             <p class="service-list__overlay">Мобильные приложения</p>
           </li>
-          <li class="service-list__item"><img src="images/box3_.jpg"
-                 alt="дизайнерские решения"
-                 width="370">
+          <li class="service-list__item">
+            <picture class="service__image">
+              <source srcset="
+                ./images/service/img3-1x-min.jpg 1x,
+                ./images/service/img3-2x-min.jpg 2x
+              "
+                      media="(min-width:1200px)" />
+              <img src="./images/service/img3-1x-min.jpg"
+                   alt="Графический дизайн" />
+            </picture>
             <p class="service-list__overlay">Дизайнерские решения</p>
           </li>
         </ul>
@@ -205,9 +225,25 @@
         <ul class="team-list">
           <li class="team-list__item">
             <div class="team-list__shadow">
-              <img src="images/img_1_Igor_Dem.jpg"
-                   alt="фото Игоря Демьяненко"
-                   width="270" />
+              <picture class="team-list__photo">
+                <source srcset="
+                    ./images/team/Igor-desk1x-min.jpg 1x,
+                    ./images/team/Igor-desk2x-min.jpg 2x
+                  "
+                        media="(min-width:1200px)" />
+                <source srcset="
+                    ./images/team/Igor-tab1x-min.jpg 1x,
+                    ./images/team/Igor-tab2x-min.jpg 2x
+                  "
+                        media="(min-width:768px)" />
+                <source srcset="
+                    ./images/team/Igor-mob1x-min.jpg 1x,
+                    ./images/team/Igor-mob2x-min.jpg 2x
+                  "
+                        media="(max-width:767px)" />
+                <img src="./images/team/Igor-mob1x-min.jpg"
+                     alt="Игорь Демьяненко" />
+              </picture>
               <div class="team-list__box">
                 <h3 class="team-list__title">Игорь Демьяненко</h3>
                 <p class="team-list__text"
@@ -240,9 +276,26 @@
           </li>
           <li class="team-list__item">
             <div class="team-list__shadow">
-              <img src="images/img_2_Olga_Rep.jpg"
-                   alt="фото Ольга Репина"
-                   width="270" />
+              <picture class="team-list__photo">
+                <source srcset="
+                    ./images/team/Olga-desk1x-min.jpg 1x,
+                    ./images/team/Olga-desk2x-min.jpg 2x
+                  "
+                        media="(min-width:1200px)" />
+                <source srcset="
+                    ./images/team/Olga-tab1x-min.jpg 1x,
+                    ./images/team/Olga-tab2x-min.jpg 2x
+                  "
+                        media="(min-width:768px)" />
+                <source srcset="
+                    ./images/team/Olga-mob1x-min.jpg 1x,
+                    ./images/team/Olga-mob2x-min.jpg 2x
+                  "
+                        media="(max-width:767px)" />
+                <img src="./images/team/Olga-mob
+						1x-min.jpg"
+                     alt="Ольга Репина" />
+              </picture>
               <div class="team-list__box">
                 <h3 class="team-list__title">Ольга Репина</h3>
                 <p class="team-list__text"
@@ -275,9 +328,25 @@
           </li>
           <li class="team-list__item">
             <div class="team-list__shadow">
-              <img src="images/img_3_Nick_Tar.jpg"
-                   alt="фото Николай Тарасов"
-                   width="270" />
+              <picture class="team-list__photo">
+                <source srcset="
+                    ./images/team/Nik-desk1x-min.jpg 1x,
+                    ./images/team/Nik-desk2x-min.jpg 2x
+                  "
+                        media="(min-width:1200px)" />
+                <source srcset="
+                    ./images/team/Nik-tab1x-min.jpg 1x,
+                    ./images/team/Nik-tab2x-min.jpg 2x
+                  "
+                        media="(min-width:768px)" />
+                <source srcset="
+                    ./images/team/Nik-mob1x-min.jpg 1x,
+                    ./images/team/Nik-mob2x-min.jpg 2x
+                  "
+                        media="(max-width:767px)" />
+                <img src="./images/team/Nik-mob1x-min.jpg"
+                     alt="Николай Тарасов" />
+              </picture>
               <div class="team-list__box">
                 <h3 class="team-list__title">Николай Тарасов</h3>
                 <p class="team-list__text"
@@ -310,9 +379,25 @@
           </li>
           <li class="team-list__item">
             <div class="team-list__shadow">
-              <img src="images/img_4_Mich_Erm.jpg"
-                   alt="фото Михаил Ермаков"
-                   width="270" />
+              <picture class="team-list__photo">
+                <source srcset="
+                    ./images/team/Miha-desk1x-min.jpg 1x,
+                    ./images/team/Miha-desk2x-min.jpg 2x
+                  "
+                        media="(min-width:1200px)" />
+                <source srcset="
+                    ./images/team/Miha-tab1x-min.jpg 1x,
+                    ./images/team/Miha-tab2x-min.jpg 2x
+                  "
+                        media="(min-width:768px)" />
+                <source srcset="
+                    ./images/team/Miha-mob1x-min.jpg 1x,
+                    ./images/team/Miha-mob2x-min.jpg 2x
+                  "
+                        media="(max-width:767px)" />
+                <img src="./images/team/Miha-mob1x-min.jpg"
+                     alt="Михаил Ермаков" />
+              </picture>
               <div class="team-list__box">
                 <h3 class="team-list__title">Михаил Ермаков</h3>
                 <p class="team-list__text"
