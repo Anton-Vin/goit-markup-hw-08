@@ -2,17 +2,24 @@
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   @include font($fz: 24px, $fw: 700, $lh: 1.17);
+  padding: 16px 0;
+  display: inline-block;
   text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font($fz: 26px, $fw: 700, $lh: 1.19);
+  }
+
   .logo_black {
     margin-left: 0;
     margin-right: 0;
-    color: #000000;
+    color: var(--text-title-color);
   }
   .logo_white {
     color: var(--text-white-color);
-  }
-  @media screen and (min-width: 1200px) {
-    @include font($fz: 26px, $fw: 700, $lh: 1.19);
-    margin-right: 93px;
   }
 }
