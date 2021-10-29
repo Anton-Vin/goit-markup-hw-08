@@ -24,7 +24,7 @@
 .nav-mob__item:not(:last-child) {
   margin-bottom: 32px;
 }
-.menu-mob__link {
+.nav-mob__link {
   display: block;
   @include font(40px, 500, 1.18, 0.02em);
   text-decoration: none;
@@ -33,19 +33,15 @@
   &:hover,
   &:focus,
   &:active,
-  &.menu-mob__link_current {
+  &.nav-mob__link_current {
     color: var(--accent-color);
   }
 }
 
-// .menu-mob {
-//   // @include font(40px, 500, 1.18, 0.02em);
-//   .menu-mob__item:not(:last-child) {
-//     margin-bottom: 38px;
-//   }
-// }
-
 .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
   height: 40px;
   width: 40px;
   border: none;
@@ -63,12 +59,6 @@
     display: none;
   }
 }
-.js-close-menu {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
-
 .wrapper {
   position: absolute;
   bottom: 0;
@@ -86,8 +76,6 @@
     text-decoration: none;
     color: var(--accent-color);
   }
-  // .menu-contacts__mail {
-  // }
 }
 .menu-contacts__link {
   @include font(24px, 500, 1.17, 0.02em);
@@ -105,6 +93,7 @@
 }
 .menu-networks {
   display: flex;
+  flex-wrap: wrap;
   @include font(18px, 500, 1.2, 0.02em);
 
   .menu-networks__link {

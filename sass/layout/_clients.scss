@@ -1,16 +1,24 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
   margin-left: -30px;
 }
 .clients-list__item {
-  flex-basis: calc(100% / 6 - 30px);
+  flex-basis: calc(100% / 2 - 30px);
+  margin-top: 30px;
   margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }
 .clients-list__links {
   @include dispflex();
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  padding: 16px 0;
   justify-content: center;
   fill: var(--social-netw-color);
   background-color: var(--bg-prime-color);
