@@ -325,6 +325,7 @@ body {
 .menu-networks__item:not(:last-child) {
   padding-right: 10px;
   margin-right: 10px;
+  margin-bottom: 20px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
@@ -652,8 +653,7 @@ body {
   .team-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    margin: -15px;
   }
 }
 
