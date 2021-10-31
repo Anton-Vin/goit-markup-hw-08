@@ -2,25 +2,34 @@
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: left;
-  padding-bottom: 40px;
-  margin-top: -8px;
-  margin-right: -8px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: -8px;
+    margin-right: -8px;
+  }
 
   @media screen and (min-width: 768px) {
     @include dispflex();
     justify-content: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
     @include dispflex();
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 .filter__item {
   margin-top: 8px;
-  margin-right: 8px;
+  // margin-right: 8px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .filter__btn {

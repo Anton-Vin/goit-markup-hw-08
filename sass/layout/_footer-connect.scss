@@ -32,12 +32,12 @@
   }
 }
 .address-wrap {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     margin-right: 165px;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
@@ -49,17 +49,19 @@
     display: flex;
     align-items: baseline;
     justify-content: center;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .coordinates__pos {
     display: block;
     margin-right: 0;
-    padding-top: 0;
-    padding-bottom: 20px;
+    // padding-top: 0;
+    // padding-bottom: 20px;
+    padding: 0;
+    margin-bottom: 20px;
     text-align: center;
 
     @media screen and (min-width: 1200px) {
@@ -79,9 +81,9 @@
   }
 }
 .join-wrap {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
   }
